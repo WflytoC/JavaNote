@@ -1,5 +1,6 @@
 //Spring相关
 compile group: 'org.springframework', name: 'spring-webmvc', version: '4.1.2.RELEASE'(引入该依赖性会自动添加web)
+
 compile group: 'org.springframework', name: 'spring-context', version: '4.1.2.RELEASE'
 compile group: 'org.springframework', name: 'spring-context-support', version: '4.1.2.RELEASE'
 compile group: 'org.springframework', name: 'spring-tx', version: '4.1.2.RELEASE'
