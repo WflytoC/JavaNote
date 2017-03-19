@@ -1,0 +1,7 @@
+* Hadoop
+* Hive
+* Zookeeper
+* HBase
+* kafka
+* Spark
+* Storm

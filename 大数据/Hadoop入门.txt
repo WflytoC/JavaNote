@@ -1,0 +1,40 @@
+####Lucene：
+
+* 全球第一个开源的全文检索引擎工具包
+* 完整的查询引擎和索引引擎
+
+
+####Nutch
+
+* 基于Lucene的网页搜索引擎
+* 加入网页抓取、解析等功能
+* 类似于Google等商业搜索引擎
+
+####Google的两篇重要论文
+
+* `Google File System`
+* `MapReduce：Simplified Data Processing On Large Clusters`
+
+
+####创建本地Hadoop集群
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
