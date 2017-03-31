@@ -1,0 +1,3 @@
+####Spring和mybatis整合思路
+
+需要Spring通过单例方式管理`SqlSessionFactory`。Spring和mybatis整合生成代理对象，使用`SqlSessionFactory`创建SqlSession，持久层的mapper都需要Spring管理。

@@ -7,6 +7,9 @@ compile group: 'org.springframework', name: 'spring-tx', version: '4.1.2.RELEASE
 compile group: 'org.springframework', name: 'spring-test', version: '4.1.2.RELEASE'
 compile group: 'org.springframework', name: 'spring-jdbc', version: '4.1.2.RELEASE'
 
+//面向切面
+compile group: 'org.springframework', name: 'spring-aspects', version: '4.1.2.RELEASE'
+
 //Servlet、JSP相关
 
 compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
@@ -16,14 +19,26 @@ compile group: 'javax.servlet', name: 'jstl', version: '1.2'
 //日志打印相关
 compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.8'(引入该依赖性会自动添加slf4j-api)
 
-//连接池
+//数据库连接池包
 compile group: 'org.apache.tomcat', name: 'tomcat-jdbc', version: '8.5.4'
+
+//数据库连接池
+compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+
+compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.2'
+
+//数据库驱动包
 compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.5'
 
 
 //Mybatis
 compile group: 'org.mybatis', name: 'mybatis', version: '3.4.1'
+
+//Mybatis和Spring的整合包
 compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.0'
+
+//Mybatis需要的日志类
+compile group: 'log4j', name: 'log4j', version: '1.2.17'
 
 //邮件相关
 compile group: 'javax.mail', name: 'mail', version: '1.4.7'(引入该依赖性会自动添加activation)
@@ -31,7 +46,8 @@ compile group: 'javax.mail', name: 'mail', version: '1.4.7'(引入该依赖性�
 //JSON相关
 compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.8.6'
 compile group: 'com.fasterxml.jackson.module', name: 'jackson-module-jaxb-annotations', version: '2.8.6'
-compile group: 'com.alibaba', name: 'fastjson', version: '1.2.17'
+
+
 
 
 
@@ -46,3 +62,20 @@ compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
 compile group: 'org.jsoup', name: 'jsoup', version: '1.10.2'
 
 
+SpringMVC和mybatis综合包：
+
+compile group: 'org.springframework', name: 'spring-webmvc', version: '4.1.2.RELEASE'
+compile group: 'org.springframework', name: 'spring-tx', version: '4.1.2.RELEASE'
+compile group: 'org.springframework', name: 'spring-jdbc', version: '4.1.2.RELEASE'
+compile group: 'org.aspectj', name: 'aspectjweaver', version: '1.8.10'
+compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.5'
+compile group: 'org.mybatis', name: 'mybatis', version: '3.4.1'
+compile group: 'org.mybatis', name: 'mybatis-spring', version: '1.3.0'
+compile group: 'log4j', name: 'log4j', version: '1.2.17'
+compile group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+compile group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0'
+compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+####Hibernate
+
+compile group: 'org.hibernate', name: 'hibernate-core', version: '5.2.6.Final'
